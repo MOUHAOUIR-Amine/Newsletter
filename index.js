@@ -49,7 +49,7 @@ app.post('/error',function(req,res) {
   res.sendFile(__dirname+'/index.html');
 })
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log("port 3000");
 
 // e177f8ebe9be52d1016112228b53bfaa-us8
